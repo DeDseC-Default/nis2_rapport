@@ -92,10 +92,6 @@ python3 nis2_audit_report_generator.py
 
 ## 🧑‍💻 Author
 
-Vinccent — Pentester & Cybersecurity Student
+DeDseC-Default — Pentester & Cybersecurity Student
 
 ---
-
-## 📜 License
-
-MIT License
