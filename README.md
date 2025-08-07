@@ -36,14 +36,6 @@ project_folder/
 
 * Python 3.7+
 * [LibreOffice](https://www.libreoffice.org/) installed and available in the system PATH
-* Python packages:
-
-  * `python-docx`
-
-Install dependencies:
-
-```bash
-pip install python-docx
 ```
 
 Ensure LibreOffice is installed:
