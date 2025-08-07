@@ -69,6 +69,7 @@ python3 nis2_audit_report_generator.py
    * Select the file to process
    * Choose the language of the template
    * Optionally define the output report title
+   * Define the client name
 
 4. The final `.docx` and `.pdf` will be generated in the `./output/<lang>/` directory.
 
