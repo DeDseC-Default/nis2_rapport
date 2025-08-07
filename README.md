@@ -36,10 +36,10 @@ project_folder/
 
 * Python 3.7+
 * [LibreOffice](https://www.libreoffice.org/) installed and available in the system PATH
-```
+
 
 Ensure LibreOffice is installed:
-
+```
 ```bash
 sudo apt install libreoffice
 
