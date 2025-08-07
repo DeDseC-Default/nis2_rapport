@@ -152,7 +152,7 @@ def convert_docx_to_pdf(input_path, output_dir):
     except subprocess.CalledProcessError as e:
         print("❌ Erreur lors de la conversion en PDF :", e.stderr.decode())
 
-def generate_report(source_path, output_dir, custom_title=None, lang="fr"):
+def generate_report(source_path, output_dir, custom_title=None, lang="fr", client_name=""):
     print("📥 Lecture du fichier source...")
     source_doc = Document(source_path)
     full_text = "\n".join([p.text for p in source_doc.paragraphs])
@@ -177,7 +177,8 @@ def generate_report(source_path, output_dir, custom_title=None, lang="fr"):
     compliance_data = extract_compliance(full_text, lang)
     replacements = {
         "{{DATE}}": today,
-        "{{TITLE}}": title_clean
+        "{{TITLE}}": title_clean,
+        "{{CLIENT}}": client_name  # <- ajout ici
     }
     color_targets = {}
 
@@ -244,9 +245,10 @@ if __name__ == "__main__":
             exit(1)
 
         custom_title = input("📝 Nom du fichier de sortie (laisser vide pour générer automatiquement) : ").strip()
+        client_name = input("👤 Nom du client (sera utilisé pour remplacer {{CLIENT}}) : ").strip()
         output_dir = f"./output/{lang}"
 
-        generate_report(selected_path, output_dir, custom_title or None, lang)
+        generate_report(selected_path, output_dir, custom_title or None, lang, client_name)
 
     except Exception as e:
         print(f"❌ Erreur critique : {str(e)}")
