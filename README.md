@@ -82,14 +82,6 @@ python3 nis2_audit_report_generator.py
 
 ---
 
-## 🛠️ TODO / Ideas
-
-* [ ] Add spell checking or GPT-powered rephrasing for observations
-* [ ] Integrate template selection based on metadata in the source
-* [ ] Add GUI interface for non-CLI usage
-
----
-
 ## 🧑‍💻 Author
 
 DeDseC-Default — Pentester & Cybersecurity Student
