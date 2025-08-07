@@ -42,6 +42,7 @@ Ensure LibreOffice is installed:
 
 ```bash
 sudo apt install libreoffice
+
 ```
 
 ---
